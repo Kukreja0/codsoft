@@ -1,0 +1,379 @@
+@import 'utilitis.css';
+:root{
+    --primary:#3DCFD3;
+    --dark:#161616;
+    --pure:#ffffff;
+    --ternar:#898989;
+    --light:#f2f2f2;
+    --secondary:#070606;
+}
+body{
+
+    font-family: 'poppins'sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smotthing: antialised;
+}
+header{
+    background: var(--dark);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 87%, 0 100%);
+}
+
+.container{
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+
+}
+
+header nav .left a{
+    color: var(--pure);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all .80s;
+}
+
+header nav .left a:hover{
+    color: var(--primary);
+}
+
+header nav{
+    padding: 2rem;
+}
+
+header nav .branding{
+    margin-right: 3rem 0;
+}
+header nav .branding a{
+
+    margin-right: 3rem;
+}
+
+.hero{
+    padding: 3rem 0;
+}
+
+.hero .left img{
+    width: 400px;
+}
+
+.hero .right{
+    color:var(--pure);
+}
+
+.hero .right h6{
+    font-size: 1.6rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.hero .right h1{
+font-size: 4rem;
+font-weight: 100;
+line-height: 1.1;
+margin-bottom: 2rem;
+
+}
+
+.hero .right h1 span{
+    color: var(--primary);
+}
+
+.hero .right p{
+    line-height: 1.7;
+    margin-bottom: 2rem;
+
+}
+
+.hero .right{
+    margin-top: -7rem;
+}
+
+section{
+    padding: 6rem 0;
+
+}
+
+section .about .about-me-img{
+    height: 450px;
+}
+
+section .about h1{
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+section .about h1 span{
+    color: var(--primary);
+}
+
+section .about h3{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+
+}
+
+section .about p{
+    font-family: 'lato',sans-serif;
+    line-height: 1.9;
+    color: var(--ternar);
+    margin-bottom: 2rem;
+}
+
+section .about .social{
+    display: flex;
+   
+}
+
+
+section .about .social a{
+    
+        background: var(--dark);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+      margin-right: 0.6rem;
+      transition:all .50s ease;
+}
+
+section .about .social a{
+        background:var(--primary);
+}
+
+
+section .about .social a img{
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+}
+
+.section-heading{
+    color: var(--secondary);
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 0.5;
+}
+
+
+.section-heading span{
+    color: var(--primary);
+}
+
+.section-heading + p{
+    color: var(--ternar);
+    font-family: 'lato, sans-serif';
+    margin-bottom: 6rem;
+    text-align: center;
+}
+
+section .services{
+background: var(--light);
+}
+
+ section .services .card-werpper{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3,  1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 6rem;
+}
+
+section .services .card-werpper .card{
+    background: var(--pure);
+    padding: 4.8rem 1rem  2rem;
+    position: relative;
+    padding-top: 5rem;
+    text-align: center;
+}
+
+section .services .card-werpper .card img{
+    position: absolute;
+    top: -2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+section .services .card-werpper .card h2{
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+ 
+section .services .card-werpper .card p{
+    font-family: 'lato'sans-serif;
+    color: var(--ternar);
+    line-height: 1.6;
+}
+
+section .services .card-werpper .card:hover{
+    background: var(--dark);
+}
+
+section .services .card-werpper .card:hover h2, section .services .card-werpper .card:hover p{
+    color: var(--pure);
+}
+
+section.freelancer{
+    text-align: center;
+    background-image: url(../images/camera.png);
+    color: var(--pure);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 80%, 0 100%);
+    padding-bottom: 14rem;
+}
+
+section.freelancer h1{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+section.freelancer p{
+    margin-bottom: 2rem;
+    font-family: 'lato'sans-serif;
+}
+
+section.work{
+    background: var(--light);
+}
+
+section.work .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+
+ section.work .card-wrapper .card{
+    position: relative;
+    height: 250px;
+}
+section.work .card-wrapper .card .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(158, 223, 236, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--pure);
+    opacity: 0;
+    transition:all .50;
+}
+
+section.work .card-wrapper .card:hover .overlay{
+    opacity: 1;
+}
+
+section.work .card-wrapper .card .overlay a{
+    color: var(--secondary);
+    text-decoration: none;
+}
+
+section.work .card-wrapper .card img{
+    height: 100%;
+    width: 100%;
+}
+
+section.contect .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+section.contect .card-wrapper .card{
+    text-align: center;
+}
+
+section.contect .card-wrapper .card img{
+    margin-bottom: 1rem;
+}
+
+section.contect .card-wrapper .card h2{
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+section.contect .card-wrapper .card h6{
+    font-size: 1rem;
+    color: var(--ternar);
+    font-weight: 400;
+    margin-bottom: 4rem;
+}
+
+section.contect .input-wrap{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+section.contect .input-wrap2{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+}
+
+section.contect .input-wrap2 input{
+    margin-bottom: 2rem;
+}
+section.contect input{
+    padding: 0.5rem;
+    font-size: 0.9rem;
+}
+
+section.contect .input-wrap2 textarea{
+    padding: 2rem;
+    font-size: 0.9rem;
+}
+
+section.contect .input-wrap2 textarea:focus{
+    outline: none;
+}
+
+.btn-wrapper{
+text-align: center;
+margin-top: 2rem;    
+}
+
+footer{
+    background: var(--dark);
+    text-align: center;
+    padding: 6rem 0;
+}
+
+footer .footer-logo{
+    margin-bottom: 3rem;
+    width: 120px;
+}
+
+footer .footerl-socials a{
+margin-right: 1rem;
+margin-bottom: 3rem;
+}
+footer .footerl-socials img{
+    color: var(--light);
+
+}
+
+footer .footerl-socials{
+    margin-bottom: 3rem;
+    margin-right: -1rem;
+}
+
+footer .copyright{
+    color: var(--ternar);
+    margin-top: 2rem;
+}
